@@ -1,0 +1,15 @@
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\bin\Debug\ProjektNaJPWP.exe.config
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\bin\Debug\ProjektNaJPWP.exe
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\bin\Debug\ProjektNaJPWP.pdb
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.csproj.AssemblyReference.cache
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.Form1.resources
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.Properties.Resources.resources
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.csproj.GenerateResource.cache
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.csproj.CoreCompileInputs.cache
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.exe
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.pdb
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.Przegrana.resources
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.Menu.resources
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.EkranPowitalny.resources
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.Pytanie.resources
+C:\Users\Jacek\source\repos\ProjektNaJPWP\ProjektNaJPWP\obj\Debug\ProjektNaJPWP.Wygrana.resources
