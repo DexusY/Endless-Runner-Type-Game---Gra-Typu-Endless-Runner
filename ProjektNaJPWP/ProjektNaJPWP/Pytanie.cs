@@ -111,7 +111,7 @@ namespace ProjektNaJPWP
                     clockTimer.Stop();
                     RightAnswer = false;
 
-                    this.DialogResult = DialogResult.OK;
+                    this.DialogResult = DialogResult.No;
                     this.Close();
                     
                     
@@ -143,7 +143,7 @@ namespace ProjektNaJPWP
                 
                 
 
-                this.DialogResult = DialogResult.OK; // Zamknij obecne okno pytania
+                this.DialogResult = DialogResult.No; // Zamknij obecne okno pytania
                 this.Close();
 
 

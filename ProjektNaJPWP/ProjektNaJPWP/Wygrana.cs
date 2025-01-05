@@ -25,6 +25,7 @@ namespace ProjektNaJPWP
         private Form1 _form1v2;
         public Wygrana(Form1 form1, int wynik, string czas)
         {
+            this.Name = "Wygrana";
             InitializeComponent();
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(100, 100);
@@ -35,10 +36,7 @@ namespace ProjektNaJPWP
             label3.Text = $"{czas}";
         }
 
-        //private void MainForm_FormClosingForWin()
-        //{
-           // ApplicationState.isApplicationExiting = false;
-       // }
+        
 
         private void Wygrana_Load(object sender, EventArgs e)
         {
@@ -48,12 +46,35 @@ namespace ProjektNaJPWP
         private void button1_Click(object sender, EventArgs e)
         {
 
+
+
             
+            
+                ClosingFunction(sender, e);
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
+            
+                
+                
+            
+            
+                 
+            
+        }
+
+        private void ClosingFunction(object sender, EventArgs e)
+        {
             ApplicationState.isApplicationExiting = false;
-            if (_form1v2 != null)
+            
+            foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
             {
-                this.Close(); 
-                _form1v2.Reset(); 
+                if (form is Form1)
+                {
+
+                    form.Close();
+                }
+
+
             }
         }
 

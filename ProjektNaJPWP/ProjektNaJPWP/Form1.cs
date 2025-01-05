@@ -16,8 +16,6 @@ namespace ProjektNaJPWP
     {
         Image backgroundImage;
 
-
-
         int przeszkodaSpeed = 12;
         int szerokoscOkno;
         int score = 0;
@@ -30,8 +28,10 @@ namespace ProjektNaJPWP
         
         public static class ApplicationState
         {
-            public static bool isApplicationExiting = false; // Statyczna zmienna dostępna globalnie
+            public static bool isApplicationExiting = false; 
         }
+
+        
 
         bool jumping = true;
         bool gameover = false;
@@ -40,6 +40,9 @@ namespace ProjektNaJPWP
         List<PictureBox> obstacles = new List<PictureBox>();
         PictureBox hitBox = new PictureBox();
 
+     
+        
+        
         private Timer clockTimer; // Timer dla licznika czasu
         private int elapsedMilliseconds = 0; //pływający czas w milisekundach
 
@@ -150,9 +153,14 @@ namespace ProjektNaJPWP
                 if (result == DialogResult.OK)
                 {                    
                     backgroundImage = Properties.Resources.tlo;
-                    this.Invalidate(); 
+                    this.Invalidate();
+                    GameTimer.Start();
                 }
-                GameTimer.Start();
+                else
+                {
+                    GameOverForAsk();
+                }
+                
 
             }
 
@@ -169,14 +177,20 @@ namespace ProjektNaJPWP
                 {
                     backgroundImage = Properties.Resources.tlo2;
                     this.Invalidate();
+                    GameTimer.Start();
+
                 }
-                GameTimer.Start();
+                else
+                {
+                    GameOverForAsk();
+                }
             }
 
             if(score == 30 && !questionAskedFor30)
             {
                 GameTimer.Stop();
                 questionAskedFor10 = true;
+                
                 Pytanie menuPytanie = new Pytanie(6000);//6000
                 var result = menuPytanie.ShowDialog();  
 
@@ -189,17 +203,19 @@ namespace ProjektNaJPWP
                     
                     Wygrana wygrana = new Wygrana(this, GetScore(), ClockTime());
                     wygrana.ShowDialog();
+                    
                     this.Close();
                     
 
                 }
+
                 else
                 {
                     
                     GameOverForAsk();  
                 }
 
-                GameTimer.Start();
+                //GameTimer.Start();
             }
 
 
@@ -415,7 +431,7 @@ namespace ProjektNaJPWP
         {
             if (e.KeyCode == Keys.Down && !gameover)
             {
-                gracz.Image = Properties.Resources.running;
+                gracz.Image = Properties.Resources.runner;
                 gracz.Top = 353;
                 
             }
